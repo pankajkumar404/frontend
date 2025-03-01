@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: lightgray;
+            padding: 15px;
+        }
+        .content {
+            width: 75%;
+            padding: 15px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Layout</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Navigation links or additional content can go here.</p>
+        </aside>
+        <main class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Pankaj Kumar</p>
+    </footer>
+    
+</body>
+</html>
