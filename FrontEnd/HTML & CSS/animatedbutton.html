@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .button:active {
+            animation: clickEffect 0.5s ease-in-out;
+        }
+        @keyframes clickEffect {
+            0% { transform: scale(1); background-color: #007BFF; }
+            50% { transform: scale(1.1); background-color: #0056b3; }
+            100% { transform: scale(1); background-color: #007BFF; }
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Click Me</button>
+</body>
+</html>

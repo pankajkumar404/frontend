@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .parallax {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .layer {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+        .layer-1 {
+            top: 20%;
+            animation: move1 3s infinite alternate ease-in-out;
+        }
+        .layer-2 {
+            top: 40%;
+            animation: move2 4s infinite alternate ease-in-out;
+        }
+        .layer-3 {
+            top: 60%;
+            animation: move3 5s infinite alternate ease-in-out;
+        }
+        @keyframes move1 {
+            from { transform: translateY(-10px); }
+            to { transform: translateY(10px); }
+        }
+        @keyframes move2 {
+            from { transform: translateY(-15px); }
+            to { transform: translateY(15px); }
+        }
+        @keyframes move3 {
+            from { transform: translateY(-20px); }
+            to { transform: translateY(20px); }
+        }
+        .content {
+            padding: 50px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax">
+        <div class="layer layer-1">Layer 1: Floating Text</div>
+        <div class="layer layer-2">Layer 2: Deeper Effect</div>
+        <div class="layer layer-3">Layer 3: Immersive Feel</div>
+    </div>
+    <div class="content">
+        <h2>Parallax Scrolling Effect</h2>
+        <p>Scroll down to experience the effect.</p>
+    </div>
+</body>
+</html>
