@@ -1,0 +1,65 @@
+<!--
+Designing a simple web page for a restaurant named "Khao-Peeyo" to show the use of bootstrap layout
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Khao Peeyo Restaurant</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Welcome to Khao-Peeyo Restaurant</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Khap-peeyo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Left Column: Text -->
+            <div class="col-md-6">
+                <h2>About Our Restaurant</h2>
+                <p>We're passionate about serving delicious food made with fresh, quality ingredients. At Khao-Peeyo, we believe in crafting authentic flavors using locally sourced ingredients. Our menu is a reflection of our dedication to culinary excellence and warm hospitality. Our journey began with a love for food and a desire to share it with others. We're committed to providing a welcoming atmosphere where you can enjoy exceptional dishes and create cherished moments.</p>
+            </div>
+            <!-- Right Column: Image -->
+            <div class="col-md-6 text-center">
+                <img src="logo.jpg" class="img-fluid rounded" alt="Company Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>Contact us at: <i class="bi bi-telephone"></i> +91 8271094918 | <i class="bi bi-envelope"></i> supportbypankaj@khaopeyo.com</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
